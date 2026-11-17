@@ -1,0 +1,65 @@
+@prefix hr: <https://ai.knoc.co.kr/ai/hr#> .
+@prefix hrd: <https://ai.knoc.co.kr/ai/hr/id/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+hrd:Rule_TrainingRules_Art1 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "교육훈련규정 제1조"@ko .
+
+hrd:Rule_TrainingRules_Art10 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "교육훈련규정 제10조"@ko .
+
+hrd:Rule_TrainingRules_Art11 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "교육훈련규정 제11조"@ko .
+
+hrd:Rule_WelfareRules_Annex1 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "복리후생규정 별표 1"@ko .
+
+hrd:Rule_WelfareRules_Art1 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "복리후생규정 제1조"@ko .
+
+hrd:Rule_WelfareRules_Art2 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "복리후생규정 제2조"@ko .
+
+hrd:Rule_WelfareRules_Art5 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "복리후생규정 제5조"@ko .
+
+hrd:Rule_WelfareRules_Art6 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "복리후생규정 제6조"@ko .
+
+hrd:Rule_WelfareRules_Art7 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "복리후생규정 제7조"@ko .
+
+hrd:Rule_WorkRules_Annex2 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "취업규칙 별표 2"@ko .
+
+hrd:Rule_WorkRules_Art20 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "취업규칙 제20조"@ko .
+
+hrd:Rule_WorkRules_Art21 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "취업규칙 제21조"@ko .
+
+hrd:Rule_WorkRules_Art22 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "취업규칙 제22조"@ko .
+
+hrd:Rule_WorkRules_Art23 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "취업규칙 제23조"@ko .
+
+hrd:Rule_WorkRules_Art24 a owl:NamedIndividual,
+        hr:Regulation ;
+    rdfs:label "취업규칙 제24조"@ko .
+

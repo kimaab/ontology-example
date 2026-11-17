@@ -1,0 +1,115 @@
+@prefix hr: <https://ai.knoc.co.kr/ai/hr#> .
+@prefix hrd: <https://ai.knoc.co.kr/ai/hr/id/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hrd:GC_LV01_11_13 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 11년 이상 13년 미만"@ko ;
+    hr:benefitValue 20.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 13 ;
+    hr:minimumTenure 11 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_13_15 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 13년 이상 15년 미만"@ko ;
+    hr:benefitValue 21.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 15 ;
+    hr:minimumTenure 13 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_15_17 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 15년 이상 17년 미만"@ko ;
+    hr:benefitValue 22.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 17 ;
+    hr:minimumTenure 15 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_17_19 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 17년 이상 19년 미만"@ko ;
+    hr:benefitValue 23.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 19 ;
+    hr:minimumTenure 17 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_19_21 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 19년 이상 21년 미만"@ko ;
+    hr:benefitValue 24.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 21 ;
+    hr:minimumTenure 19 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_1_3 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 1년 이상 3년 미만"@ko ;
+    hr:benefitValue 15.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 3 ;
+    hr:minimumTenure 1 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_21_plus a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 21년 이상"@ko ;
+    hr:benefitValue 25.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:minimumTenure 21 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_3_5 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 3년 이상 5년 미만"@ko ;
+    hr:benefitValue 16.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 5 ;
+    hr:minimumTenure 3 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_5_7 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 5년 이상 7년 미만"@ko ;
+    hr:benefitValue 17.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 7 ;
+    hr:minimumTenure 5 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_7_9 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 7년 이상 9년 미만"@ko ;
+    hr:benefitValue 18.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 9 ;
+    hr:minimumTenure 7 ;
+    hr:unit "일" .
+
+hrd:GC_LV01_9_11 a owl:NamedIndividual,
+        hr:GrantCondition ;
+    rdfs:label "연차휴가 근속 9년 이상 11년 미만"@ko ;
+    hr:benefitValue 19.0 ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 ;
+    hr:hasTargetBenefit hrd:LV01 ;
+    hr:maximumTenure 11 ;
+    hr:minimumTenure 9 ;
+    hr:unit "일" .
+

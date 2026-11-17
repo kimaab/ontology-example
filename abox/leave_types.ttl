@@ -1,0 +1,39 @@
+@prefix hr: <https://ai.knoc.co.kr/ai/hr#> .
+@prefix hrd: <https://ai.knoc.co.kr/ai/hr/id/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+hrd:LV01 a owl:NamedIndividual,
+        hr:WelfareBenefit ;
+    rdfs:label "연차휴가"@ko ;
+    hr:hasBenefitType hrd:Leave .
+
+hrd:LV02 a owl:NamedIndividual,
+        hr:WelfareBenefit ;
+    rdfs:label "반차"@ko ;
+    hr:hasBenefitType hrd:Leave .
+
+hrd:LV03 a owl:NamedIndividual,
+        hr:WelfareBenefit ;
+    rdfs:label "경조사휴가"@ko ;
+    hr:hasBenefitType hrd:Leave .
+
+hrd:LV04 a owl:NamedIndividual,
+        hr:WelfareBenefit ;
+    rdfs:label "병가"@ko ;
+    hr:hasBenefitType hrd:Leave .
+
+hrd:LV05 a owl:NamedIndividual,
+        hr:WelfareBenefit ;
+    rdfs:label "공가"@ko ;
+    hr:hasBenefitType hrd:Leave .
+
+hrd:LV06 a owl:NamedIndividual,
+        hr:WelfareBenefit ;
+    rdfs:label "무급휴가"@ko ;
+    hr:hasBenefitType hrd:Leave .
+
+hrd:Leave a owl:NamedIndividual,
+        hr:BenefitType ;
+    rdfs:label "휴가"@ko .
+

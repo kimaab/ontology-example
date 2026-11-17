@@ -1,0 +1,172 @@
+@prefix hr:   <https://ai.knoc.co.kr/ai/hr#> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+<https://ai.knoc.co.kr/ai/hr> a owl:Ontology ;
+    rdfs:label "인사·복지 온톨로지"@ko .
+
+# =====================================================================
+# 클래스 (11개)
+# =====================================================================
+
+# --- 중심: 혜택과 조건 (CQ1, CQ2, CQ4, CQ5) ---
+
+hr:WelfareBenefit a owl:Class ;
+    rdfs:label "복지혜택"@ko ;
+    rdfs:comment "회사가 직원에게 주는 개별 혜택. 예: 연차휴가, 경조사휴가, 병가, 결혼축하금, 생일 축하금, 외부교육비 지원"@ko .
+
+hr:BenefitType a owl:Class ;
+    rdfs:label "혜택 종류"@ko ;
+    rdfs:comment "복지혜택을 묶는 분류. 예: 휴가, 지원금, 교육지원"@ko .
+
+hr:GrantCondition a owl:Class ;
+    rdfs:label "부여 조건"@ko ;
+    rdfs:comment "어떤 조건(근속, 직급, 경조사)에서 어떤 혜택을 얼마나 주는지 묶은 규칙. 예: 근속 3년 이상 5년 미만이면 연차휴가 16일"@ko .
+
+hr:Regulation a owl:Class ;
+    rdfs:label "근거 규정"@ko ;
+    rdfs:comment "부여 조건의 근거가 되는 규정 조항. 예: 취업규칙 제20조, 복리후생규정 별표 1, 근로기준법 제60조"@ko .
+
+# --- 조건에 쓰이는 대상 (CQ1, CQ4, CQ5) ---
+
+hr:Employee a owl:Class ;
+    rdfs:label "직원"@ko ;
+    rdfs:comment "회사에 고용된 사람. 입사일과 직급에 따라 받을 수 있는 복지혜택이 달라진다."@ko .
+
+hr:Grade a owl:Class ;
+    rdfs:label "직급"@ko ;
+    rdfs:comment "직원의 등급. 예: 1급 ~ 6급. 1급이 가장 높다."@ko .
+
+hr:FamilyEvent a owl:Class ;
+    rdfs:label "경조사"@ko ;
+    rdfs:comment "혜택이 주어지는 직원 본인 또는 가족의 경사와 조사. 예: 결혼, 출산, 사망"@ko .
+
+# --- 신청 (CQ3) ---
+
+hr:PaymentMethod a owl:Class ;
+    rdfs:label "지급 방식"@ko ;
+    rdfs:comment "혜택을 받는 방식. 예: 신청지급(직원이 신청해야 받음), 자동지급(신청 없이 받음)"@ko .
+
+hr:ApplicationProcedure a owl:Class ;
+    rdfs:label "신청 절차"@ko ;
+    rdfs:comment "혜택을 신청하는 전체 절차. 여러 절차 단계로 이루어진다. 예: 휴가 신청 절차"@ko .
+
+hr:ProcedureStep a owl:Class ;
+    rdfs:label "절차 단계"@ko ;
+    rdfs:comment "신청 절차를 이루는 한 단계. 순서를 가진다. 예: 1단계 그룹웨어에서 휴가 종류 선택, 2단계 결재 상신"@ko .
+
+hr:Document a owl:Class ;
+    rdfs:label "서류"@ko ;
+    rdfs:comment "혜택 신청 시 제출하는 증빙서류. 예: 청첩장, 가족관계증명서, 진단서, 수료증"@ko .
+
+# =====================================================================
+# 관계 속성
+# =====================================================================
+
+hr:hasTargetBenefit a owl:ObjectProperty ;
+    rdfs:label "대상 혜택"@ko ;
+    rdfs:comment "부여 조건이 어떤 복지혜택에 대한 것인지 잇는다. 예: 근속 3~5년 조건 → 연차휴가"@ko ;
+    rdfs:domain hr:GrantCondition ;
+    rdfs:range  hr:WelfareBenefit .
+
+hr:hasBenefitType a owl:ObjectProperty ;
+    rdfs:label "혜택 분류"@ko ;
+    rdfs:comment "복지혜택이 어떤 혜택 종류에 속하는지 잇는다. 예: 연차휴가 → 휴가, 결혼축하금 → 지원금"@ko ;
+    rdfs:domain hr:WelfareBenefit ;
+    rdfs:range  hr:BenefitType .
+
+hr:hasRegulation a owl:ObjectProperty ;
+    rdfs:label "근거 규정"@ko ;
+    rdfs:comment "부여 조건이 어떤 규정 조항에 근거하는지 잇는다. 예: 근속 3~5년 연차 조건 → 취업규칙 제20조"@ko ;
+    rdfs:domain hr:GrantCondition ;
+    rdfs:range  hr:Regulation .
+
+hr:hasPaymentMethod a owl:ObjectProperty ;
+    rdfs:label "지급 방식"@ko ;
+    rdfs:comment "복지혜택이 어떤 지급 방식으로 주어지는지 잇는다. 예: 결혼축하금 → 신청지급, 생일 축하금 → 자동지급"@ko ;
+    rdfs:domain hr:WelfareBenefit ;
+    rdfs:range  hr:PaymentMethod .
+
+hr:hasApplicationProcedure a owl:ObjectProperty ;
+    rdfs:label "신청 방법"@ko ;
+    rdfs:comment "복지혜택을 어떤 신청 절차로 신청하는지 잇는다. 예: 연차휴가 → 휴가 신청 절차, 외부교육비 지원 → 교육 지원 신청 절차"@ko ;
+    rdfs:domain hr:WelfareBenefit ;
+    rdfs:range  hr:ApplicationProcedure .
+
+hr:hasStep a owl:ObjectProperty ;
+    rdfs:label "포함 단계"@ko ;
+    rdfs:comment "신청 절차가 어떤 절차 단계로 이루어지는지 잇는다. 단계의 순서는 단계 순서 값으로 정한다. 예: 휴가 신청 절차 → 1단계 휴가 종류 선택, 2단계 결재 상신"@ko ;
+    rdfs:domain hr:ApplicationProcedure ;
+    rdfs:range  hr:ProcedureStep .
+
+hr:hasRequiredDocument a owl:ObjectProperty ;
+    rdfs:label "필요 서류"@ko ;
+    rdfs:comment "복지혜택을 신청할 때 어떤 서류가 필요한지 잇는다. 예: 결혼축하금 → 청첩장, 병가 → 진단서"@ko ;
+    rdfs:domain hr:WelfareBenefit ;
+    rdfs:range  hr:Document .
+
+hr:hasGrade a owl:ObjectProperty ;
+    rdfs:label "직급"@ko ;
+    rdfs:comment "직원이 어떤 직급인지 잇는다. 예: 홍길동 → 4급"@ko ;
+    rdfs:domain hr:Employee ;
+    rdfs:range  hr:Grade .
+
+hr:hasTargetGrade a owl:ObjectProperty ;
+    rdfs:label "대상 직급"@ko ;
+    rdfs:comment "부여 조건이 어떤 직급에 적용되는지 잇는다. 여러 직급에 적용되면 직급마다 하나씩 잇는다. 예: 외부교육비 한도 200만원 조건 → 1급, 2급, 3급"@ko ;
+    rdfs:domain hr:GrantCondition ;
+    rdfs:range  hr:Grade .
+
+hr:hasFamilyEvent a owl:ObjectProperty ;
+    rdfs:label "해당 경조사"@ko ;
+    rdfs:comment "부여 조건이 어떤 경조사에 대한 것인지 잇는다. 예: 결혼휴가 5일 조건 → 결혼"@ko ;
+    rdfs:domain hr:GrantCondition ;
+    rdfs:range  hr:FamilyEvent .
+
+# =====================================================================
+# 값 속성 (7개)
+# =====================================================================
+
+hr:hireDate a owl:DatatypeProperty ;
+    rdfs:label "입사일"@ko ;
+    rdfs:comment "직원이 입사한 날짜. 근속연수는 저장하지 않고 이 값과 기준일로 계산한다. 예: 2023-11-12"@ko ;
+    rdfs:domain hr:Employee ;
+    rdfs:range  xsd:date .
+
+hr:minimumTenure a owl:DatatypeProperty ;
+    rdfs:label "최소 근속연수(이상)"@ko ;
+    rdfs:comment "부여 조건의 최소 근속연수(이 값 이상, 단위: 년). 예: 3"@ko ;
+    rdfs:domain hr:GrantCondition ;
+    rdfs:range  xsd:integer .
+
+hr:maximumTenure a owl:DatatypeProperty ;
+    rdfs:label "최대 근속연수(미만)"@ko ;
+    rdfs:comment "부여 조건의 최대 근속연수(이 값 미만, 단위: 년). 상한이 없으면 값을 넣지 않는다. 예: 5"@ko ;
+    rdfs:domain hr:GrantCondition ;
+    rdfs:range  xsd:integer .
+
+hr:benefitValue a owl:DatatypeProperty ;
+    rdfs:label "혜택 값"@ko ;
+    rdfs:comment "부여 조건이 주는 혜택의 양. 단위(일, 원, %)는 단위 속성으로 구분한다. 예: 16(일), 500000(원), 80(%)"@ko ;
+    rdfs:domain hr:GrantCondition ;
+    rdfs:range  xsd:decimal .
+
+hr:unit a owl:DatatypeProperty ;
+    rdfs:label "단위"@ko ;
+    rdfs:comment "혜택 값의 단위. 일, 원, % 중 하나를 쓴다. 예: 일"@ko ;
+    rdfs:domain hr:GrantCondition ;
+    rdfs:range  xsd:string .
+
+hr:stepOrder a owl:DatatypeProperty ;
+    rdfs:label "단계 순서"@ko ;
+    rdfs:comment "신청 절차 안에서 이 단계가 몇 번째인지. 1부터 시작한다. 예: 1"@ko ;
+    rdfs:domain hr:ProcedureStep ;
+    rdfs:range  xsd:integer .
+
+hr:stepDescription a owl:DatatypeProperty ;
+    rdfs:label "단계 설명"@ko ;
+    rdfs:comment "절차 단계에서 직원이 할 일. 예: 그룹웨어 근태관리 메뉴에서 휴가 종류를 선택하고 기간을 입력한다"@ko ;
+    rdfs:domain hr:ProcedureStep ;
+    rdfs:range  xsd:string .

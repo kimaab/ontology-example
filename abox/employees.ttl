@@ -1,0 +1,186 @@
+@prefix hr: <https://ai.knoc.co.kr/ai/hr#> .
+@prefix hrd: <https://ai.knoc.co.kr/ai/hr/id/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hrd:E02001 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "최민준"@ko ;
+    hr:hasGrade hrd:G6 ;
+    hr:hireDate "2026-07-25"^^xsd:date .
+
+hrd:E02002 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "정지우"@ko ;
+    hr:hasGrade hrd:G6 ;
+    hr:hireDate "2026-04-07"^^xsd:date .
+
+hrd:E02003 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "류지유"@ko ;
+    hr:hasGrade hrd:G6 ;
+    hr:hireDate "2025-12-18"^^xsd:date .
+
+hrd:E02004 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "윤우진"@ko ;
+    hr:hasGrade hrd:G6 ;
+    hr:hireDate "2025-08-31"^^xsd:date .
+
+hrd:E02005 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "송지유"@ko ;
+    hr:hasGrade hrd:G6 ;
+    hr:hireDate "2024-11-12"^^xsd:date .
+
+hrd:E02006 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "김서윤"@ko ;
+    hr:hasGrade hrd:G5 ;
+    hr:hireDate "2023-12-19"^^xsd:date .
+
+hrd:E02007 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "정시우"@ko ;
+    hr:hasGrade hrd:G5 ;
+    hr:hireDate "2023-11-12"^^xsd:date .
+
+hrd:E02008 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "최수아"@ko ;
+    hr:hasGrade hrd:G5 ;
+    hr:hireDate "2023-06-19"^^xsd:date .
+
+hrd:E02009 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "권다은"@ko ;
+    hr:hasGrade hrd:G5 ;
+    hr:hireDate "2022-05-13"^^xsd:date .
+
+hrd:E02010 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "홍수아"@ko ;
+    hr:hasGrade hrd:G5 ;
+    hr:hireDate "2021-11-12"^^xsd:date .
+
+hrd:E02011 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "이지민"@ko ;
+    hr:hasGrade hrd:G4 ;
+    hr:hireDate "2020-01-24"^^xsd:date .
+
+hrd:E02012 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "최건우"@ko ;
+    hr:hasGrade hrd:G4 ;
+    hr:hireDate "2019-11-12"^^xsd:date .
+
+hrd:E02013 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "강수아"@ko ;
+    hr:hasGrade hrd:G4 ;
+    hr:hireDate "2018-05-13"^^xsd:date .
+
+hrd:E02014 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "박예린"@ko ;
+    hr:hasGrade hrd:G4 ;
+    hr:hireDate "2017-10-06"^^xsd:date .
+
+hrd:E02015 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "강현우"@ko ;
+    hr:hasGrade hrd:G4 ;
+    hr:hireDate "2016-11-12"^^xsd:date .
+
+hrd:E02016 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "한서연"@ko ;
+    hr:hasGrade hrd:G3 ;
+    hr:hireDate "2015-04-07"^^xsd:date .
+
+hrd:E02017 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "서주원"@ko ;
+    hr:hasGrade hrd:G3 ;
+    hr:hireDate "2014-07-25"^^xsd:date .
+
+hrd:E02018 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "조채원"@ko ;
+    hr:hasGrade hrd:G3 ;
+    hr:hireDate "2013-11-12"^^xsd:date .
+
+hrd:E02019 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "정지민"@ko ;
+    hr:hasGrade hrd:G3 ;
+    hr:hireDate "2012-01-24"^^xsd:date .
+
+hrd:E02020 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "류건우"@ko ;
+    hr:hasGrade hrd:G3 ;
+    hr:hireDate "2011-05-14"^^xsd:date .
+
+hrd:E02021 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "박서연"@ko ;
+    hr:hasGrade hrd:G2 ;
+    hr:hireDate "2010-08-31"^^xsd:date .
+
+hrd:E02022 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "신예린"@ko ;
+    hr:hasGrade hrd:G2 ;
+    hr:hireDate "2008-12-18"^^xsd:date .
+
+hrd:E02023 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "안주원"@ko ;
+    hr:hasGrade hrd:G2 ;
+    hr:hireDate "2007-11-12"^^xsd:date .
+
+hrd:E02024 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "송주원"@ko ;
+    hr:hasGrade hrd:G2 ;
+    hr:hireDate "2006-06-19"^^xsd:date .
+
+hrd:E02025 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "신서윤"@ko ;
+    hr:hasGrade hrd:G2 ;
+    hr:hireDate "2005-11-12"^^xsd:date .
+
+hrd:E02026 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "안서윤"@ko ;
+    hr:hasGrade hrd:G1 ;
+    hr:hireDate "2004-03-01"^^xsd:date .
+
+hrd:E02027 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "안예린"@ko ;
+    hr:hasGrade hrd:G1 ;
+    hr:hireDate "2002-10-06"^^xsd:date .
+
+hrd:E02028 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "송우진"@ko ;
+    hr:hasGrade hrd:G1 ;
+    hr:hireDate "2001-07-25"^^xsd:date .
+
+hrd:E02029 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "김지우"@ko ;
+    hr:hasGrade hrd:G1 ;
+    hr:hireDate "1999-01-24"^^xsd:date .
+
+hrd:E02030 a owl:NamedIndividual,
+        hr:Employee ;
+    rdfs:label "윤선우"@ko ;
+    hr:hasGrade hrd:G1 ;
+    hr:hireDate "1996-05-13"^^xsd:date .
+

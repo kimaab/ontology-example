@@ -1,0 +1,29 @@
+@prefix hr: <https://ai.knoc.co.kr/ai/hr#> .
+@prefix hrd: <https://ai.knoc.co.kr/ai/hr/id/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+hrd:G1 a owl:NamedIndividual,
+        hr:Grade ;
+    rdfs:label "1급"@ko .
+
+hrd:G2 a owl:NamedIndividual,
+        hr:Grade ;
+    rdfs:label "2급"@ko .
+
+hrd:G3 a owl:NamedIndividual,
+        hr:Grade ;
+    rdfs:label "3급"@ko .
+
+hrd:G4 a owl:NamedIndividual,
+        hr:Grade ;
+    rdfs:label "4급"@ko .
+
+hrd:G5 a owl:NamedIndividual,
+        hr:Grade ;
+    rdfs:label "5급"@ko .
+
+hrd:G6 a owl:NamedIndividual,
+        hr:Grade ;
+    rdfs:label "6급"@ko .
+

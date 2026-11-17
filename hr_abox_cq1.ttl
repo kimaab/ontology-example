@@ -1,0 +1,15 @@
+@prefix hr:   <https://ai.knoc.co.kr/ai/hr#> .
+@prefix hrd:  <https://ai.knoc.co.kr/ai/hr/id/> .
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:  <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:  <http://www.w3.org/2001/XMLSchema#> .
+
+hrd:GC_AnnualLeave_3_5 a hr:GrantCondition , owl:NamedIndividual ;
+    rdfs:label "연차휴가 근속 3년 이상 5년 미만"@ko ;
+    hr:hasTargetBenefit hrd:AnnualLeave ;
+    hr:minimumTenure 3 ;
+    hr:maximumTenure 5 ;
+    hr:benefitValue 16 ;
+    hr:unit "일" ;
+    hr:hasRegulation hrd:Rule_WorkRules_Art20 .

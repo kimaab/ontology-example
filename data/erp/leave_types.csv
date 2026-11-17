@@ -1,0 +1,7 @@
+﻿leave_code,leave_name,paid_yn,basis
+LV01,연차휴가,Y,취업규칙 제20조
+LV02,반차,Y,취업규칙 제21조
+LV03,경조사휴가,Y,취업규칙 제22조
+LV04,병가,Y,취업규칙 제23조
+LV05,공가,Y,
+LV06,무급휴가,N,

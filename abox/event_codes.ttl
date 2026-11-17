@@ -1,0 +1,17 @@
+@prefix hr: <https://ai.knoc.co.kr/ai/hr#> .
+@prefix hrd: <https://ai.knoc.co.kr/ai/hr/id/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+hrd:Birth a owl:NamedIndividual,
+        hr:FamilyEvent ;
+    rdfs:label "출산"@ko .
+
+hrd:Death a owl:NamedIndividual,
+        hr:FamilyEvent ;
+    rdfs:label "사망"@ko .
+
+hrd:Marriage a owl:NamedIndividual,
+        hr:FamilyEvent ;
+    rdfs:label "결혼"@ko .
+
